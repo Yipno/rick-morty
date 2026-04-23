@@ -1,0 +1,56 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 160px;
+  text-align: center;
+  background-color: #1a1a2e;
+  color: white;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.img {
+  width: 100%;
+}
+
+.name {
+  font-size: 0.95rem;
+  padding: 8px 8px 4px;
+  color: white;
+}
+
+.species {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+/* Badge colorisé selon le statut */
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+/* styles[props.status.toLowerCase()] applique une de ces trois classes */
+.alive {
+  background-color: #27ae60;
+  color: white;
+}
+
+.dead {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.unknown {
+  background-color: #888;
+  color: white;
+}
