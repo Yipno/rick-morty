@@ -34,12 +34,9 @@ Affiche les informations suivantes reçues en props :
 Dans `Home.js` :
 
 1. Crée un état `status` initialisé à `''` (chaîne vide = pas de filtre)
-2. Ajoute un menu déroulant `<select>` avec les options suivantes :
-   - Tous (valeur `''`)
-   - Alive
-   - Dead
-   - unknown
-3. Quand l'utilisateur change le filtre, mets à jour l'état `status`
+1. Crée un état `status` initialisé à `''` (chaîne vide = pas de filtre)
+2. Ajoute 4 boutons : Tous, Alive, Dead, unknown
+3. Au clic sur un bouton, mets à jour l'état status avec la valeur correspondante
 4. Adapte ton `useEffect` pour qu'il se redéclenche quand `status` change :
    - Si `status` est vide → fetch tous les personnages
    - Si `status` a une valeur → fetch avec le filtre : `?status=Alive`
